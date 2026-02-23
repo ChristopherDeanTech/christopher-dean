@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Financial Literacy Toolkit</title>
+<link rel="stylesheet" href="css/toolkit.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h1>💰 Financial Literacy Toolkit</h1>
+
+<div class="card">
+    <h2>Budget Calculator</h2>
+    <input type="number" id="income" placeholder="Income">
+    <input type="number" id="expenses" placeholder="Expenses">
+    <button onclick="calculateBudget()">Calculate</button>
+    <p id="budgetResult"></p>
+</div>
+
+<div class="card">
+    <h2>Investment Calculator</h2>
+    <input type="number" id="principal" placeholder="Initial Investment">
+    <input type="number" id="rate" placeholder="Interest Rate %">
+    <input type="number" id="years" placeholder="Years">
+    <button onclick="calculateInvestment()">Calculate</button>
+    <p id="investmentResult"></p>
+    <canvas id="investmentChart"></canvas>
+</div>
+
+<script src="js/toolkit.js"></script>
+</body>
+</html>
