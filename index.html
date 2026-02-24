@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Christopher Dean | Developer</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    title>Financial Literacy Toolkit | Christopher Dean</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/script.js"></script>
 </head>
 <body>
 
 <header>
-    <h1>Christopher Dean</h1>
-    <p>Developer | Financial Literacy Builder</p>
+    <h1>Financial Literacy Toolkit</h1>
+    <p>Empowering Smart Money Decisions</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+    </nav>
 </header>
 
-<section>
-    <h2>About Me</h2>
-    <p>
-        I build tools that help people understand money better.
-        This portfolio showcases my Financial Literacy Toolkit.
-    </p>
+<section class="card">
+    <h2>Compound Interest Calculator</h2>
+    <input type="number" id="principal" placeholder="Initial Investment">
+    <input type="number" id="rate" placeholder="Annual Interest Rate (%)">
+    <input type="number" id="years" placeholder="Years">
+    <button onclick="calculateCompound()">Calculate</button>
+    <h3 id="compoundResult"></h3>
+    <canvas id="chart"></canvas>
 </section>
 
-<section>
-    <h2>Projects</h2>
-    <a href="projects/financial-toolkit/index.html">
-        Open Financial Literacy Toolkit
-    </a>
+<section class="card">
+    <h2>Loan Payment Calculator</h2>
+    <input type="number" id="loanAmount" placeholder="Loan Amount">
+    <input type="number" id="loanRate" placeholder="Interest Rate (%)">
+    <input type="number" id="loanYears" placeholder="Years">
+    <button onclick="calculateLoan()">Calculate</button>
+    <h3 id="loanResult"></h3>
 </section>
 
 <footer>
-    <p>© 2026 Christopher Dean</p>
+    <p>© 2026 Christopher Dean | Financial Literacy Portfolio</p>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>
